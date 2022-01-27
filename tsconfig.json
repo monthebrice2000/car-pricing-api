@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "@models/*": ["./src/users/models/*", "./src/reports/models/*"],
+      "@controllers/*": ["./src/users/controllers/*", "./src/reports/controllers/*"],
+      "@repositories/*": ["./src/reports/repositories/*", "./src/users/repositories/*"],
+      "@middlewares/*": ["./src/middlewares/*"],
+      "@services/*": ["./src/users/services/*", "./src/reports/services/*"],
+      "@modules/*": ["./src/users/*", "./src/reports/*"],
+      "@configs/*": ["./src/configs/*"],
+      "@app/*": ["./src/*"],
+      "@decorators/*": ["./src/decorators/*"],
+      "@interceptors/*": ["./src/interceptors/*"]
+    },
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false
+  }
+}

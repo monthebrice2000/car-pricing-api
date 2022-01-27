@@ -1,0 +1,44 @@
+yarn --ignore-engines add dotenv typeorm @nestjs/typeorm class-validator class-transformer pg sqlite3 bcrypt mysql cross-env @nestjs/config mongodb @nestjs/graphql graphql@^15 apollo-server-express crypto-js passport-jwt @nestjs/jwt passport passport-local @nestjs/passport
+
+yarn --ignore-engines add dotenv typeorm @nestjs/typeorm class-validator class-transformer pg sqlite3 bcrypt mysql cross-env @nestjs/conf @nestjs/mongoose mongoose @nestjs/graphql graphql@^15 apollo-server-express
+ig heroku
+
+PATCH http://localhost:3000/auth/6
+Accept: application/json
+Content-Type: application/json
+
+{
+  "user": {
+    "email": "monthefd@gmail.com",
+    "password": "petite"
+  }
+}
+
+###
+
+DELETE http://localhost:3000/auth/5
+Accept: application/json
+
+###
+
+GET http://localhost:3000/auth/9
+Accept: application/json
+
+###
+
+GET http://localhost:3000/auth?email=monthedj@gmail.com
+Accept: application/json
+
+###
+
+POST http://localhost:3000/auth/signup
+Accept: application/json
+Content-Type: application/json
+
+{
+  "user": {
+    "email": "monthedbd@gmail.com",
+    "password": "petite"
+  }
+}
+###
